@@ -9,9 +9,9 @@
 #include "doctest.h"
 #include "solver.hpp"
 
-using namespace ariel;
+//using namespace ariel;
 
-
-TEST_CASE("Test case 2") {
+TEST_CASE("Test case 2")
+{
     /* Add more tests here */
 }

@@ -9,12 +9,12 @@ STUDENT_OBJECTS := $(subst .cpp,.o,$(STUDENT_SOURCES))
 
 run: test
 	./$^
-
-test: TestRunner.o Test1.o Test2.o $(STUDENT_OBJECTS)
+	
+test: TestRunner.o Test_iris.o Test_shahar.o $(STUDENT_OBJECTS)
 	$(CXX) $(CXXFLAGS) $^ -o test
 
 %.o: %.cpp $(HEADERS)
 	$(CXX) $(CXXFLAGS) --compile $< -o $@
 
 clean:
-	rm -f *.o test
+	rm -f *.o test 
